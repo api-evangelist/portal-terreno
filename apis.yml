@@ -1,7 +1,24 @@
 aid: portal-terreno
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/portal-terreno.png
 name: Portal Terreno
-description: Portal Terreno is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Portal Terreno is an online marketplace for land and parcels ("terrenos" and "parcelas")
+  in Latin America, operating localized classifieds portals for Chile (portalterreno.cl) and Mexico
+  (portalterreno.com.mx) with tens of thousands of land listings. The Next.js web platform lets buyers
+  search, filter, and contact sellers to find land for sale, while sellers and real-estate agents
+  publish listings. It was surfaced as a portfolio company of 500 Global and added to the API Evangelist
+  network for enrichment. No public developer, API, documentation, or well-known discovery surface was
+  found during the enrichment pass; the domain-security posture was probed live.
 url: https://raw.githubusercontent.com/api-evangelist/portal-terreno/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Real Estate
+- Classifieds
+- Marketplace
+- Land
+- Property
+- Chile
+- Mexico
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/portal-terreno-domain-security.yml
 - type: Website
   url: https://portalterreno.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
